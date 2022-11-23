@@ -29,14 +29,16 @@ public class Ejemplo06 {
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
         // true 
-        while (bandera) {
+        //while (bandera) {\
+        while(bandera == true){
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
 
             if (calificacion > 20) {
+                // es un control para poder desarrollar esto 
                 calificacion = 20;
             }
-            suma_total = suma_total + calificacion;
+            suma_total =  calificacion;
 
             // proceso para salir del ciclo.
             System.out.println("Ingrese el valor -1 para salir del ciclo");
